@@ -1,2 +1,1 @@
-# dots
-My riced dotfiles. 
+# Welcome To My Rice's
