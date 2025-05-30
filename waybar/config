@@ -1,0 +1,62 @@
+{
+    "layer": "top",
+    "position": "top",
+    "reload_style_on_change": true,
+    "modules-left": ["clock","custom/pacman", "custom/connection"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/gpu-usage", "custom/audio"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*": [ 1,2,3,4 ]
+        },
+        "show-empty": false
+    },
+    "clock": {
+        "format": "{:%H:%M} ",
+        "interval": 1
+    },
+   "custom/gpu-usage": {
+  	"exec": "~/.config/waybar/scripts/gpu-usage.sh",
+  	"interval": 5,
+  	"return-type": "json",
+  	"format": "{}"
+   },
+   "custom/audio": {
+   	"format": "{}",
+    	"exec": "~/.config/waybar/scripts/audio_output.sh",
+    	"interval": 2,
+    	"return-type": "json",
+    	"signal": 10,
+    	"on-click": "~/.config/waybar/scripts/audio_output.sh toggle",
+    	"on-scroll-up": "~/.config/waybar/scripts/audio_output.sh volume-up",
+    	"on-scroll-down": "~/.config/waybar/scripts/audio_output.sh volume-down",
+    	"tooltip": true
+    },
+  "custom/connection": {
+    	"exec": "~/.config/waybar/scripts/connection.sh",
+    	"interval": 15,
+    	"return-type": "json",
+    	"format": "{}",
+    	"tooltip": false
+   },
+    "custom/pacman": {
+        "format": "󰅢 {}",
+        "interval": 30,
+        "exec": "checkupdates 2>/dev/null | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "kitty sh -c 'yay -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+        "signal": 8,
+        "tooltip": false
+    },
+    "custom/endpoint":{
+        "format": "|",
+        "tooltip": false
+    },
+}
