@@ -25,6 +25,8 @@ tooltip {
 #clock,
 #custom-pacman,
 #custom-connection,
+#custom-power,
+#custom-gpu-usage,
 #custom-audio {
     padding: 0px 5px;
     transition: all .3s ease;
@@ -33,6 +35,9 @@ tooltip {
 
 #clock:hover,
 #custom-pacman:hover,
+#custom-power:hover,
+#custom-audio:hover,
+#custom-gpu-usage:hover,
 #network:hover {
     transition: all .3s ease;
     color:@color9;

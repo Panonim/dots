@@ -21,11 +21,11 @@ get_sink_icon() {
     if [[ "$muted" == "yes" ]]; then
         echo "󰝟"  # muted
     elif [[ "$description" =~ [Hh]eadphones ]]; then
-        echo ""  # headphones
+        echo ""  # headphones
     elif [[ "$description" =~ [Ss]peaker ]]; then
-        echo ""  # speakers
+        echo "󰓃"  # speakers
     else
-        echo ""  # fallback
+        echo ""  # fallback
     fi
 }
 

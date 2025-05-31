@@ -4,7 +4,7 @@
     "reload_style_on_change": true,
     "modules-left": ["clock","custom/pacman", "custom/connection"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/gpu-usage", "custom/audio"],
+    "modules-right": ["custom/gpu-usage", "custom/audio", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -45,6 +45,11 @@
     	"return-type": "json",
     	"format": "{}",
     	"tooltip": false
+   },
+   "custom/power": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-click": "wlogout -b 4"
    },
     "custom/pacman": {
         "format": "󰅢 {}",
