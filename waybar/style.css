@@ -86,3 +86,6 @@ tooltip {
 #custom-connection.connected {
     color: #4CAF50;
 }
+#custom-connection.disconnected {
+    color: #c32828;
+}

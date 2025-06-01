@@ -36,17 +36,17 @@ button > * {
 }
 
 #logout {
-    background-image: image(url("icons/white_logout.png"));
+    background-image: url("icons/white_logout.png");
 }
 
 #reboot {
-    background-image: image(url("icons/white_reboot.png"));
+    background-image: url("icons/white_reboot.png");
 }
 
 #shutdown {
-    background-image: image(url("icons/white_power.png"));
+    background-image: url("icons/white_power.png");
 }
 
 #sleep {
-    background-image: image(url("icons/white_sleep.png"));
+    background-image: url("icons/white_sleep.png");
 }
