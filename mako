@@ -4,3 +4,4 @@ border-radius=5
 font=InconsolataGo Nerd Font Mono
 background-color=#101010C0
 default-timeout=2500
+ignore-timeout=1

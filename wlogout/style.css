@@ -5,30 +5,29 @@
 
 window {
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 8px;
     border: 2px solid #7a0c0c;
     font-family: "InconsolataGo Nerd Font Mono", monospace;
     font-size: 16px;
     color: #ffffff;
-    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: none;
 }
 
 button {
-    border-radius: 5px;
+    border-radius: 0px;
     border: 1px solid #7a0c0c;
     color: #ffffff;
-    background-color: rgba(40, 10, 10, 0.8);
+    background-color: rgba(15, 5, 5, 0.92);;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 25%;
+    background-size: 20%;
     padding: 12px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 button:focus, button:active, button:hover {
     background-color: rgba(55, 0, 0, 0.8);
     outline: none;
-    box-shadow: 0 0 8px 2px #7a0c0c;
-    border-color: #7a0c0c;
+    border: 1.1px solid #7a0c0c;
 }
 
 button > * {
@@ -37,10 +36,14 @@ button > * {
 
 #logout {
     background-image: url("icons/white_logout.png");
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #reboot {
     background-image: url("icons/white_reboot.png");
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #shutdown {
